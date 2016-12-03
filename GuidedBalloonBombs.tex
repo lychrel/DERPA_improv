@@ -1,0 +1,97 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{multicol}
+
+\begin{document}
+\begin{center}
+\begin{LARGE}
+\textbf{Proposal Abstract in Response to DARPA-BAA-16-22:} \\
+\textbf{``Guided Balloon Bombs''} \\~\\~\\
+\end{LARGE}
+\begin{Large}
+\textbf{Lead Organization: DERPA} \\~\\
+\end{Large}
+\end{center}
+
+\begin{multicols}{2}
+\begin{Large}
+\begin{center}
+\textbf{Technical POC} \\
+John McFarland Lynch \\
+208 Cobble Place \\
+Durham, NC 27712 \\
+(919) 471-8975 \\
+lychrel@ghostmail.com \\~\\
+
+\textbf{Administrative POC} \\
+Ryan Warren Lynch \\
+208 Cobble Place \\
+Durham, NC 27712 \\
+(919) 471-8975 \\
+ryanlynchtds@gmail.com
+
+\vfill\columnbreak
+
+\textbf{Security POC} \\
+Michael Arcidiacono \\
+4217 Forest Edge Trail \\
+Durham, NC 27705 \\
+(919) 909-2915 \\
+mixarcidiacono@gmail.com \\~\\~\\~\\
+
+\textbf{CAGE Code} \\
+\textbf{7LH20}
+
+\end{center}
+\end{Large}
+\end{multicols}
+\pagebreak
+
+\section{Goals and Impact}
+
+The goal of this research is to investigate methods by which violent non-state actors might cheaply and easily make targeted airborne IED attacks against military personnel, their equipment, and their locations in foreign countries.
+
+Normally, launching or dropping explosives from the air (in the form of bombs or ballistic missiles, for example) is too expensive and complicated to be pursued by non-state actors. This research outlines an airborne IED that can be produced from commercially available goods with comparatively little technical experience. Through the use of a GPS-guided weather-balloon rig, the explosive could be carried at a distance of up to 20 miles above-ground; it would release from the rig and fall to its target, detonating upon impact. At 20 miles above-ground, the bomb would evade radar detection, and the weather-balloon rig could be configured to launch at any altitude below that.
+
+The ability to cheaply and quickly drop IEDs from the air would enable enemy combatants a much easier and more damaging method of attacking military installments (bases, camps) and equipment. They would be able to inflict explosive structural damage to buildings and equipment, in addition to fatal bodily harm to personnel, all from a safe distance. Without any on-board guidance systems, the bombs would be relatively quiet in their descent, and they would also be small enough in size and density to avoid detection.
+
+With this technology realized, even the smallest non-state actors would be able to launch remote attacks against a wide variety of U.S. military installations in foreign countries, threatening those installations' safety and peace of mind. This research would investigate the feasibility of such a design.
+
+\section{Technical Plan}
+
+Each bomb would be carried up to 20 miles into the air by PVC frame fitted with a cluster of weather balloons (1200g; Scientific Sales, model \#8244, for example) filled with hydrogen (which is easier to obtain than helium). The bomb would attach to the weather-balloon rig through the use of a worm gear. (Our design for this stage is a highly simplified version of the mechanism detailed in patent US7845263B1.)
+
+The weather-balloon rig would utilize an altitude sensor to determine when it had achieved the correct predesignated altitude; once there, it would move toward a set of predesignated GPS coordinates through the use of four motors (such as Turnigy RotoMax 150cc Brushless Outrunner motors) with propellers (for example, 32x12 Aerostar Gas Series Wood Propellers) oriented in a diamond shape around the robot. These would be controlled by a flight controller (such as a Turnigy dlux 250A HV 14s 60v ESC).
+
+Once at the correct location, the worm gear would turn; the bomb would release from the rig, drop to its target, and detonate with the energy supplied from impact. Dropped from 20 miles above-ground, the bomb would reach an impact velocity of over 700 meters per second; dropped from just 5 miles, its impact velocity would still exceed the speed of sound.
+
+The bomb could accommodate a variety of different IED designs. For example, 200 pounds of Tannerite (which can be purchased at a cost of \$425 per 250 pounds from Ammonium Nitrate Company, or synthesized independently from ammonium nitrate and aluminum powder), would produce a detonation velocity of around 2,980 m/s and roughly 0.5 gigajoules of energy upon impact. The rig's delivery system would deliver enough impact force to detonate many unstable substances, so it could utilize a variety of different IED designs.
+
+The hydrogen for the weather balloons could be synthesized cheaply and quickly from water with the use of an electrolysis machine that could be assembled entirely from Home Depot parts and materials and which could produce hydrogen gas at a rate of 5 liters per minute with two car batteries used for power. If you would like specifics on this design, please email our Technical Point of Contact.
+
+The balloon rig would likely use an Arduino Uno or similar microcontroller, and would contain a GPS, an IMU, and an altitude sensor. The  Arduino (or similar microcontroller) would determine when to release the rocket and where to move the balloon rig. If necessary, a smartphone could substitute for the microcontroller and IMU.
+
+If necessary or desired, the PVC rig could be constructed with an extra linear actuator (a rod to which the balloons are affixed) such that, when the bomb is dropped, the actuator would move and release most of the balloons. This would enable retrieval of the rig: instead of escaping into the upper atmosphere, it could drive towards a predesignated set of ``home'' coordinates as it lost altitude.
+
+Feasibility studies could be conducted without the use of actual explosives for the bomb, so no state explosives laws would be infringed.
+
+% http://www.wikihow.com/Make-Rocket-Fuel
+% or: http://hackaday.com/2010/09/28/homemade-solid-propellant-rocket-motors/
+% See video bro has for Hydrogen production
+% systemized dispersal of charge, little lightening rods.
+% Either really sharp points that are controlled that can dissipate charge. But you also don't
+% want to puncture the balloon. That, or perfectly smooth.
+
+%Hits ground, causes higher velocity to hit Tannerite
+
+\section{Capabilities/Management Plan}
+
+DERPA consists largely of rising college freshmen with experience in the design and creation of robotic systems and computer programming. All members partake in the group's creative process, and members contribute individually to the areas of each project with which they are most familiar. DERPA's small size and loose administrative structure enable fluid cooperation and quick communication among members, which enhances our ability to work through designs thoroughly, quickly, and with multiple perspectives.
+
+For this project, we anticipate Michael Arcidiacono, Jonathan Stepp, and John Lynch to work the most on the missile and balloon-rig's programming, with Ryan Lynch, Matthew Miller, and David Proa\~{n}o heading the creation of its chassis and missile. However, these distinctions are largely arbitrary; every member will involve himself extensively in the whole process.
+
+\end{document}
+
+% Considerations:
+% Missile accuracy won't be amazing. Investigate fragmentation,
+% Napalm, a bunch of smaller missiles. You don't need accuracy.
